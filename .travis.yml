@@ -1,5 +1,10 @@
 sudo: false
 language: java
 jdk:
-	- oraclejdk8
-script: mvn clean install
+- oraclejdk8
+deploy:
+  provider: heroku
+  api_key:
+    secure: dLv21dOT88rQ9nv9vvLIotEw893pghB5FVIO/s4EufrqXbaTDcAum8WCZCmqYlvX2/HgynJIhAf1WikBl8rVDpNNrnrEo0oHynCjZF4uvIVbljUIaN/rpXF7jsjMABJcKNpsc+OalL5Kk6S7gXGkBC9/HBTIxRVmnI50mzGoEEyn5VzdQFEFxxbLh7wyBk4AYJ9H9MNXrsl2tp50mW7ZKSdH1cdyYg8e/E1KrOAR7E4w4XMy2H1izWJ8XZ+qt3mvkaXV/m0N+YiY//ViFO8l2gAWIKBu04dN2RmPIQzWwJFJE7Nutz3H+ASfzOsxP6dM9vlYzZ/2JrHbfk0ssgD9RNjiix7LHsLbsSt1sQO166rfeLZK33PWmEyuIU17bM3hY8/9sSLNfwl31pXtwUydKn2utH/t/QoFN1Ajippi6RBmpzrcZ28ybjT+fmqsd6Rrig1WA3Vo3rGKbD3ayRfOc01E0PGeIuEnKnK7dDVWKEbUB7hMMdeHH9Tl3ZxzTkmIEfTHOEWBxGHAcCTL2t0F0yhrJshAyJ7qy2XZ1GsJyZW5aMe0bWPlVGG0RSLkV5gq9r1UhmmnkqMrfEbygnpsHYey/d5IoU9OYkqJQC90Qh47V3j6nYJDH9Mb9mPSQ5R7GsTH6L7YXM/zyLh+o3Q3C63oUipMmScjWvKwjxXOn2g=
+  app: helloworldci
+  on: master
