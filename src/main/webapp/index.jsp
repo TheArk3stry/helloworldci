@@ -1,5 +1,6 @@
 <html>
 <body>
-<h2>Hello World! :v</h2>
+<h1>kitties hacking</h1>
+<img src="http://i.giphy.com/o0vwzuFwCGAFO.gif"/>
 </body>
 </html>
